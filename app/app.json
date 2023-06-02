@@ -1,0 +1,32 @@
+{
+  "id": "76493e33-f697-4808-9981-52b727ca45ac",
+  "name": "Dan Delektron Core",
+  "publisher": "Mandal Jensen",
+  "brief": "",
+  "description": "Dan Delektron Core contains Dan Delektrons core changes to Business Central.",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "https://www.relateit.dk",
+  "logo": "",
+  "features": ["TranslationFile"],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "22.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": 
+  [
+    {
+      "from": 50000,
+      "to": 50100
+    }
+  ],
+  "runtime": "11.0",
+  "target": "Cloud",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  }
+}

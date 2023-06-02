@@ -1,0 +1,51 @@
+{
+  "id": "FILL THIS OUT",
+  "name": "FILL THIS OUT TestApp",
+  "publisher": "RelateIT A/S",
+  "brief": "",
+  "description": "FILL THIS OUT",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "https://www.relateit.dk",
+  "logo": "./res/logo.png",
+  "dependencies": [
+    {
+      "id": "ID OF THE MAIN APP",
+      "name": "NAME OF THE MAIN APP",
+      "publisher": "RelateIT A/S",
+      "version": "1.0.0.0"
+    } ,
+    {
+
+      "id": "dd0be2ea-f733-4d65-bb34-a28f4624fb14", 
+      "publisher": "Microsoft", 
+      "name": "Library Assert", 
+      "version": "19.0.0.0" 
+    },
+    {
+ 
+      "id": "5d86850b-0d76-4eca-bd7b-951ad998e997", 
+      "publisher": "Microsoft", 
+       "name": "Tests-TestLibraries",
+      "version": "19.0.0.0" 
+    }  
+  ],
+  "platform": "19.0.0.0",
+  "application": "19.0.0.0",
+  "idRanges": 
+  [
+    {
+      "from": FILL THIS OUT,
+      "to": FILL THIS OUT
+    }
+  ],
+  "runtime": "8.0",
+  "target": "Cloud",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  }
+}

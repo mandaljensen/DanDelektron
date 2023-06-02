@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="da-DK" original="Dan Delektron Core.g.xlf">
+    <body>
+      <group id="body">
+        <trans-unit id="PageExtension 4087887968 - Control 4016633481 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Dan Delektron</source>
+          <target>Dan Delektron</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control DanDelektron - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 243748095 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Contact Person field.</source>
+          <target>Angiver værdien af feltet Kontaktperson.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Contact Person - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 1920065008 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Description 2 field.</source>
+          <target>Angiver værdien af feltet Beskrivelse 2.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control DD Description 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 1282368391 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Description 3 field.</source>
+          <target>Angiver værdien af feltet Beskrivelse 3.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control DD Description 3 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 101401136 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Estimate (hours) field.</source>
+          <target>Angiver værdien af feltet Anslået, timetal.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Estimate (hours) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 3177069940 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Finished in % field.</source>
+          <target>Angiver værdien af feltet Udført i %.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Finished in % - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 2311232812 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Job Name field.</source>
+          <target>Angiver værdien af feltet Job navn.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Job Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 4256952683 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Phone No. on Site field.</source>
+          <target>Angiver værdien af feltet Telefonnr. på stedet.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Phone No. on Site - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 2678740710 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Quote, netto field.</source>
+          <target>Angiver værdien af feltet Tilbud, netto.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Quote, netto - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 4078940458 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Requester field.</source>
+          <target>Angiver værdien af feltet Rekvirent.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Requester - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 1707338830 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Quality Control</source>
+          <target>Kvalitetssikring</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control QC - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 280288977 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Atex (report) field.</source>
+          <target>Angiver værdien af feltet Atex.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Atex (report) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 280288977 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Atex</source>
+          <target>Atex</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Atex (report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 3423058089 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Contact Person QC field.</source>
+          <target>Angiver værdien af feltet Kontaktperson KS.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Contact Person QC - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 3828075061 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Documentation e-mail field.</source>
+          <target>Angiver værdien af feltet Dokumentations e-mail.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Documentation e-mail - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 2370743490 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Documentation Sent field.</source>
+          <target>Angiver værdien af feltet Dokumentation sendt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Documentation Sent - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 2816170957 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Documentation Sent At field.</source>
+          <target>Angiver værdien af feltet Dokumentation sendt d.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Documentation Sent At - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 1267882679 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Documentation Sent By field.</source>
+          <target>Angiver værdien af feltet Dokumentation sendt af.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Documentation Sent By - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 5623025 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Ground System (report) field.</source>
+          <target>Angiver værdien af feltet Jordingsanlæg.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Ground System (report) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 5623025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Ground System</source>
+          <target>Jordingsanlæg</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Ground System (report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 2034097699 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Inspection (report) field.</source>
+          <target>Angiver værdien af feltet Eftersyn.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Inspection (report) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 2034097699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Inspection</source>
+          <target>Eftersyn</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Inspection (report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 558879128 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Lightning Protection (report) field.</source>
+          <target>Angiver værdien af feltet Lynafledning.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Lightning Protection (report) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 558879128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Lightning Protection</source>
+          <target>Lynafledning</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Lightning Protection (report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 2012159295 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Potential Equalization(report) field.</source>
+          <target>Angiver værdien af feltet Potentialudligning.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Potential Equalization(report) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 2012159295 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Potential Equalization</source>
+          <target>Potentialudligning</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Potential Equalization(report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 2072904323 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the QC Comment field.</source>
+          <target>Angiver værdien af feltet KS bemærkning.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control QC Comment - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 1638780287 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Quality Control (report) field.</source>
+          <target>Angiver værdien af feltet Kvalitetssikring.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Quality Control (report) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 1638780287 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Quality Control</source>
+          <target>Kvalitetssikring</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Quality Control (report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 3743971578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Report Type</source>
+          <target> Rapport type</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Report Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 2458074326 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Responsible Installer field.</source>
+          <target>Angiver værdien af feltet Ansvarlig montør.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Responsible Installer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 1027092754 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Special (report) field.</source>
+          <target>Angiver værdien af feltet Special.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Special (report) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 1027092754 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Special</source>
+          <target>Special</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Special (report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4087887968 - Control 1963981418 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Status QC field.</source>
+          <target>Angiver værdien af feltet Status KS.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Status QC - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 280288977 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Atex (report)</source>
+          <target>Atex</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Atex (report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 243748095 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Contact Person</source>
+          <target>Kontaktperson</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Contact Person - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 3423058089 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Contact Person QC</source>
+          <target>Kontaktperson KS</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Contact Person QC - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 1920065008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Description 2</source>
+          <target>Beskrivelse 2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field DD Description 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 1282368391 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Description 3</source>
+          <target>Beskrivelse 3</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field DD Description 3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 3828075061 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Documentation e-mail</source>
+          <target>Dokumentations e-mail</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Documentation e-mail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 2370743490 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Documentation Sent</source>
+          <target>Dokumentation sendt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Documentation Sent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 2816170957 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Documentation Sent At</source>
+          <target>Dokumentation sendt d.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Documentation Sent At - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 1267882679 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Documentation Sent By</source>
+          <target>Dokumentation sendt af</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Documentation Sent By - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 101401136 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Estimate (hours)</source>
+          <target>Anslået, timetal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Estimate (hours) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 3177069940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Finished in %</source>
+          <target>Udført i %</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Finished in % - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 5623025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Ground System (report)</source>
+          <target>Jordingsanlæg</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Ground System (report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 2034097699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Inspection (report)</source>
+          <target>Eftersyn</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Inspection (report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 2311232812 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Job Name</source>
+          <target>Job navn</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Job Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 558879128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Lightning Protection (report)</source>
+          <target>Lynafledning</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Lightning Protection (report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 4256952683 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Phone No. on Site</source>
+          <target>Telefonnr. på stedet</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Phone No. on Site - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 2012159295 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Potential Equalization(report)</source>
+          <target>Potentialudligning</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Potential Equalization(report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 2072904323 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>QC Comment</source>
+          <target>KS bemærkning</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field QC Comment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 1638780287 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Quality Control (report)</source>
+          <target>Kvalitetssikring</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Quality Control (report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 2678740710 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Quote, netto</source>
+          <target>Tilbud, netto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Quote, netto - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 4078940458 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Requester</source>
+          <target>Rekvirent</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Requester - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 2458074326 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Responsible Installer</source>
+          <target>Ansvarlig montør</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Responsible Installer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 1027092754 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Special (report)</source>
+          <target>Special</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Special (report) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 1963981418 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Status QC</source>
+          <target>Status KS</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Status QC - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 1963981418 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Planning,Started,Ready,Sent Customer,Finished</source>
+          <target>Skabelon,Igang,Klar,Sendt kunde,Afsluttet</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Status QC - Property OptionCaption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
