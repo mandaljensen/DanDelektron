@@ -31,6 +31,7 @@ tableextension 50000 "Job Ext." extends Job
         {
             Caption = 'Responsible Installer';
             DataClassification = CustomerContent;
+            TableRelation = Resource;
         }
         field(50006; "Status QC"; Option)
         {
@@ -78,6 +79,18 @@ tableextension 50000 "Job Ext." extends Job
         {
             Caption = 'Documentation Sent';
             DataClassification = CustomerContent;
+
+            trigger OnValidate()
+            begin
+                if "Documentation Sent" <> xRec."Documentation Sent" then
+                    if "Documentation Sent" then begin
+                        "Documentation Sent By" := CopyStr(UserId(), 1, 50);
+                        "Documentation Sent At" := CurrentDateTime();
+                    end else begin
+                        "Documentation Sent By" := '';
+                        Clear("Documentation Sent At");
+                    end;
+            end;
         }
         field(50015; "Documentation Sent By"; Code[50])
         {

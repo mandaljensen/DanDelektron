@@ -134,11 +134,13 @@ pageextension 50000 "Job Card Ext." extends "Job Card"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Documentation Sent At field.';
+                    Editable = false;
                 }
                 field("Documentation Sent By"; Rec."Documentation Sent By")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Documentation Sent By field.';
+                    Editable = false;
                 }
                 field("QC Comment"; Rec."QC Comment")
                 {
