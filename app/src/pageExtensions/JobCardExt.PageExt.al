@@ -38,15 +38,15 @@ pageextension 50000 "Job Card Ext." extends "Job Card"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Contact Person field.';
                 }
-                field(Requester; Rec.Requester)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Requester field.';
-                }
                 field("Phone No. on Site"; Rec."Phone No. on Site")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Phone No. on Site field.';
+                }
+                field(Requester; Rec.Requester)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Requester field.';
                 }
                 field("Quote, netto"; Rec."Quote, netto")
                 {
@@ -149,5 +149,6 @@ pageextension 50000 "Job Card Ext." extends "Job Card"
                 }
             }
         }
+        movebefore("DD Description 2"; Description)
     }
 }

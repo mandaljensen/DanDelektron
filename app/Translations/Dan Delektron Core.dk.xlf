@@ -3,6 +3,18 @@
   <file datatype="xml" source-language="en-US" target-language="da-DK" original="Dan Delektron Core.g.xlf">
     <body>
       <group id="body">
+        <trans-unit id="PageExtension 4123091762 - Control 4230565839 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Specifies the value of the No. 2 field.</source>
+          <target>Angiver værdien af feltet Nr. 2.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item Card Ext. - Control No. 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1681767695 - Control 1805115540 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3595318222">
+          <source>Specifies the value of the Item No. 2 field.</source>
+          <target>Angiver værdien af feltet Varenr. 2.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item Ledger Entries Ext. - Control Item No. 2 - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4087887968 - Control 4016633481 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Dan Delektron</source>
           <target>Dan Delektron</target>
@@ -207,6 +219,24 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Status QC - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4067417304 - Control 3240609922 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2556642749">
+          <source>Specifies the value of the Default Job Task No. field.</source>
+          <target>Angiver værdien af feltet Standard sagsopgavenr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Jobs Setup Ext. - Control Default Job Task No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 108391818 - Control 1483851300 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3870787835">
+          <source>Specifies the value of the Hide field.</source>
+          <target>Angiver værdien af feltet Skjul.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Location Card Ext. - Control Hide - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3269917901 - Field 1805115540 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
+          <source>Item No. 2</source>
+          <target>Varenr. 2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Ledger Entry Ext. - Field Item No. 2 - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3672691964 - Field 280288977 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>Atex (report)</source>
           <target>Atex</target>
@@ -356,6 +386,18 @@
           <target>Skabelon,Igang,Klar,Sendt kunde,Afsluttet</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Status QC - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4067417304 - Field 3240609922 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2556642749">
+          <source>Default Job Task No.</source>
+          <target>Standard sagsopgavenr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Jobs Setup Ext. - Field Default Job Task No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1836292502 - Field 1483851300 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3891454143">
+          <source>Hide</source>
+          <target>Skjul</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Location Ext. - Field Hide - Property Caption</note>
         </trans-unit>
       </group>
     </body>
