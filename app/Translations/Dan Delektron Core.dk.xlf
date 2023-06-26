@@ -3,6 +3,180 @@
   <file datatype="xml" source-language="en-US" target-language="da-DK" original="Dan Delektron Core.g.xlf">
     <body>
       <group id="body">
+        <trans-unit id="Report 1913861753 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Work Order</source>
+          <target>Arbejdsseddel</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 416706000" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Comments</source>
+          <target>Bemærkninger</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType CommentsCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 35837468" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <target>Dato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType DateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 817831222" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beskrivelse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType DescriptionCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 4013601236" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Document No.</source>
+          <target>Eksternt bilagsnr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType ExternalDocNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 1292293871" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <target>Nummer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType NoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 2308951394" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Side</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType PageNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 1127534204" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity used during work (Posted with the Sales Order)</source>
+          <target>Antal anvendt under arbejde (bogført med salgsordren)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType QtyworkPostSalesOrderCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 3246368361" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <target>Antal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType QuantityCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 4286031908" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity Used</source>
+          <target>Anvendt antal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType QuantityUsedCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 808370890" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <target>Dato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType SalesCommentLineDtCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 2968792397" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Order No.</source>
+          <target>Salgsordrenr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType SalesOrderNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 4246775995" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shelf No.</source>
+          <target>Placering</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType ShelfNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 4217840372" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Date</source>
+          <target>Afsendelsesdato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType ShipmentDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 449695264" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target>Type</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType TypeCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 2643924704" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit of Measure</source>
+          <target>Enhed</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType UnitofMeasureCaptionControl33Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 2713385421" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit of Measure</source>
+          <target>Enhed</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType UnitofMeasureCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 3711966989" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Work Order</source>
+          <target>Arbejdsseddel</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType WorkOrderCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - NamedType 41820694" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Extra Item/Resource used during work (Posted with Item or Resource Journals)</source>
+          <target>Ekstra vare/ressource anvendt under arbejde (bogført med vare- eller ressourcekladder)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - NamedType workPostdItemorResJnlCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1913861753 - ReportDataItem 1192395785 - Property 1806354803" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Order</source>
+          <target>Salgsordre</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - ReportDataItem Sales Header - Property RequestFilterHeading</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1979668428 - Control 4085727052 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Specifies the value of the Due Date field.</source>
+          <target>Angiver værdien af feltet Forfaldsdato.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension General Journal Ext. - Control Due Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1979668428 - Control 4131160974 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Specifies the value of the Job Line Amount (LCY) field.</source>
+          <target>Angiver værdien af feltet Linjebeløb for sag (RV).</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension General Journal Ext. - Control Job Line Amount (LCY) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1979668428 - Control 2522987627 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Specifies the value of the Job Line Type field.</source>
+          <target>Angiver værdien af feltet Linjetype for sag.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension General Journal Ext. - Control Job Line Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1979668428 - Control 1908272084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Specifies the value of the Job No. field.</source>
+          <target>Angiver værdien af feltet Sagsnr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension General Journal Ext. - Control Job No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1979668428 - Control 83002312 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Specifies the value of the Job Quantity field.</source>
+          <target>Angiver værdien af feltet Antal sager.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension General Journal Ext. - Control Job Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1979668428 - Control 561421623 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Specifies the value of the Job Task No. field.</source>
+          <target>Angiver værdien af feltet Sagsopgavenr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension General Journal Ext. - Control Job Task No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1979668428 - Control 424582983 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Specifies the value of the Job Unit Cost (LCY) field.</source>
+          <target>Angiver værdien af feltet Kostpris for sag (RV).</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension General Journal Ext. - Control Job Unit Cost (LCY) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1979668428 - Control 441038976 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Specifies the value of the Job Unit Price field.</source>
+          <target>Angiver værdien af feltet Enhedspris for sag.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension General Journal Ext. - Control Job Unit Price - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1979668428 - Control 3405998085 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Specifies the value of the Job Unit Price (LCY) field.</source>
+          <target>Angiver værdien af feltet Enhedspris for sag (RV).</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension General Journal Ext. - Control Job Unit Price (LCY) - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4123091762 - Control 4230565839 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Specifies the value of the No. 2 field.</source>
           <target>Angiver værdien af feltet Nr. 2.</target>
