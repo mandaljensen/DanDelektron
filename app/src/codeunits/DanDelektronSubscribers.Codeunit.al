@@ -28,6 +28,24 @@ codeunit 50000 "Dan Delektron Subscribers"
             end;
     end;
 
+    [EventSubscriber(ObjectType::Page, Page::"Job Card", 'OnNewRecordEvent', '', true, false)]
+    local procedure SetStatus(var Rec: Record Job; var xRec: Record Job; BelowxRec: Boolean)
+    begin
+        Rec.Status := Rec.Status::Planning;
+    end;
+
+    [EventSubscriber(ObjectType::Table, Database::Job, 'OnBeforeValidateStatus', '', true, false)]
+    local procedure CheckExternalDocNo(var Job: Record Job; xJob: Record Job; CurrentFieldNo: Integer; var IsHandled: Boolean)
+    begin
+        if Job.Status = xJob.Status then
+            exit;
+
+        if Job.Status <> Job.Status::Open then
+            exit;
+
+        Job.TestField("External Document No.");
+    end;
+
     // TODO: Remove after opening values is posted.
     // [EventSubscriber(ObjectType::Table, Database::Job, 'OnBeforeUpdateOverBudgetValue', '', true, false)]
     // local procedure SetIsHandledTemp(var Job: Record Job; JobNo: Code[20]; Usage: Boolean; Cost: Decimal; var IsHandled: Boolean)
