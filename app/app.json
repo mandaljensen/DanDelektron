@@ -4,14 +4,21 @@
   "publisher": "Mandal Jensen",
   "brief": "",
   "description": "Dan Delektron Core contains Dan Delektrons core changes to Business Central.",
-  "version": "1.0.0.16",
+  "version": "1.0.0.18",
   "privacyStatement": "",
   "EULA": "",
   "help": "",
   "url": "https://www.relateit.dk",
   "logo": "",
   "features": ["TranslationFile"],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "id": "644f7e5b-a81c-408a-aaa2-766e655a80a3",
+      "name": "Payment and Reconciliation Formats (DK)",
+      "publisher": "Microsoft",
+      "version": "22.0.0.0"
+    }
+  ],
   "screenshots": [],
   "platform": "22.0.0.0",
   "application": "22.0.0.0",

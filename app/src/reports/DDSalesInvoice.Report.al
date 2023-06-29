@@ -450,6 +450,15 @@ report 50002 "DD Sales Invoice"
             column(ExternalDocumentNo_Lbl; FieldCaption("External Document No."))
             {
             }
+            column(BankIBANLine; BankIBANLine)
+            {
+            }
+            column(BankSWIFTLine; BankSWIFTLine)
+            {
+            }
+            column(FIKPaymentLine; FIKPaymentLine)
+            {
+            }
             dataitem(Line; "Sales Invoice Line")
             {
                 DataItemLink = "Document No." = FIELD("No.");
@@ -1159,6 +1168,13 @@ report 50002 "DD Sales Invoice"
                 TotalPaymentDiscOnVAT := 0;
                 if ("Order No." = '') and "Prepayment Invoice" then
                     "Order No." := "Prepayment Order No.";
+
+                FIKPaymentLine := PadStr('', 15 - 2 - StrLen("No."), '0') + "No." + '0';
+                FIKPaymentLine := FIKPaymentLine + Modulus10(FIKPaymentLine);
+                FIKPaymentLine := '+71<' + FIKPaymentLine + ' +' + CompanyInfo.BankCreditorNo + '<';
+
+                BankIBANLine := StrSubstNo(BankIBANCaptionLbl, CompanyInfo.IBAN);
+                BankSWIFTLine := StrSubstNo(BankSWIFTCaptionLbl, CompanyInfo."SWIFT Code");
             end;
 
             trigger OnPreDataItem()
@@ -1363,7 +1379,12 @@ report 50002 "DD Sales Invoice"
         UnitPriceCaptionLbl: Label 'Unit Price';
         AmountCaptionLbl: Label 'Amount';
         ShipmentDateCaptionLbl: label 'Date';
+        BankIBANCaptionLbl: Label 'DKK account: IBAN %1';
+        BankSWIFTCaptionLbl: label 'SWIFT Adress: %1';
         NoToShow: Code[20];
+        FIKPaymentLine: Text;
+        BankIBANLine: Text;
+        BankSWIFTLine: Text;
 
     protected var
         CompanyBankAccount: Record "Bank Account";
@@ -1719,6 +1740,36 @@ report 50002 "DD Sales Invoice"
         OnBeforeFormatLineValues(CurrLine, FormattedQuantity, FormattedUnitPrice, FormattedVATPct, FormattedLineAmount, IsHandled);
         if not IsHandled then
             FormatDocument.SetSalesInvoiceLine(CurrLine, FormattedQuantity, FormattedUnitPrice, FormattedVATPct, FormattedLineAmount);
+    end;
+
+    local procedure Modulus10(TestNumber: Code[16]): Code[16]
+    var
+        Counter: Integer;
+        Accumulator: Integer;
+        WeightNo: Integer;
+        SumStr: Text[30];
+    begin
+        WeightNo := 2;
+        SumStr := '';
+        for Counter := StrLen(TestNumber) downto 1 do begin
+            Evaluate(Accumulator, CopyStr(TestNumber, Counter, 1));
+            Accumulator := Accumulator * WeightNo;
+            SumStr := SumStr + Format(Accumulator);
+            if WeightNo = 1 then
+                WeightNo := 2
+            else
+                WeightNo := 1;
+        end;
+        Accumulator := 0;
+        for Counter := 1 to StrLen(SumStr) do begin
+            Evaluate(WeightNo, CopyStr(SumStr, Counter, 1));
+            Accumulator := Accumulator + WeightNo;
+        end;
+        Accumulator := 10 - (Accumulator mod 10);
+        if Accumulator = 10 then
+            exit('0')
+        else
+            exit(Format(Accumulator));
     end;
 
     [IntegrationEvent(false, false)]
