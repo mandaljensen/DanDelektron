@@ -47,9 +47,9 @@ codeunit 50000 "Dan Delektron Subscribers"
     end;
 
     // TODO: Remove after opening values is posted.
-    // [EventSubscriber(ObjectType::Table, Database::Job, 'OnBeforeUpdateOverBudgetValue', '', true, false)]
-    // local procedure SetIsHandledTemp(var Job: Record Job; JobNo: Code[20]; Usage: Boolean; Cost: Decimal; var IsHandled: Boolean)
-    // begin
-    //     IsHandled := true;
-    // end;
+    [EventSubscriber(ObjectType::Table, Database::Job, 'OnBeforeUpdateOverBudgetValue', '', true, false)]
+    local procedure SetIsHandledTemp(var Job: Record Job; JobNo: Code[20]; Usage: Boolean; Cost: Decimal; var IsHandled: Boolean)
+    begin
+        IsHandled := true;
+    end;
 }
