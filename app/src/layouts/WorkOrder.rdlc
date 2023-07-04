@@ -76,7 +76,7 @@
                                             </Paragraphs>
                                             <ZIndex>6</ZIndex>
                                             <Style>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -132,7 +132,7 @@
                                               <RightBorder>
                                                 <Style>Solid</Style>
                                               </RightBorder>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -273,7 +273,7 @@
                                               <RightBorder>
                                                 <Style>Solid</Style>
                                               </RightBorder>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -432,13 +432,13 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>3.22887cm</Width>
+                                    <Width>3.48639cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>2.5cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>7.10811cm</Width>
+                                    <Width>6.84353cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>1.76244cm</Width>
@@ -490,7 +490,7 @@
                                               <RightBorder>
                                                 <Style>Solid</Style>
                                               </RightBorder>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -756,7 +756,7 @@
                                               <RightBorder>
                                                 <Style>Solid</Style>
                                               </RightBorder>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -1022,7 +1022,7 @@
                               </Filters>
                               <Top>0.05291cm</Top>
                               <Height>1.00001cm</Height>
-                              <Width>18.05751cm</Width>
+                              <Width>18.05045cm</Width>
                               <ZIndex>1</ZIndex>
                               <Visibility>
                                 <Hidden>=iif(Count(Fields!No_SalesLine.Value),FALSE,TRUE)</Hidden>
@@ -1119,7 +1119,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
                                                 <Color>LightGrey</Color>
                                                 <Style>None</Style>
                                               </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -1156,7 +1156,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
                                                 <Color>LightGrey</Color>
                                                 <Style>None</Style>
                                               </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -1193,7 +1193,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
                                                 <Color>LightGrey</Color>
                                                 <Style>None</Style>
                                               </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -1230,7 +1230,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
                                                 <Color>LightGrey</Color>
                                                 <Style>None</Style>
                                               </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -1267,7 +1267,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
                                                 <Color>LightGrey</Color>
                                                 <Style>None</Style>
                                               </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -1304,7 +1304,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
                                                 <Color>LightGrey</Color>
                                                 <Style>None</Style>
                                               </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -1341,7 +1341,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
                                                 <Color>LightGrey</Color>
                                                 <Style>None</Style>
                                               </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -1378,7 +1378,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
                                                 <Color>LightGrey</Color>
                                                 <Style>None</Style>
                                               </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -1415,7 +1415,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
                                                 <Color>LightGrey</Color>
                                                 <Style>None</Style>
                                               </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
                                               <PaddingBottom>2pt</PaddingBottom>
@@ -1480,6 +1480,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
                           <KeepTogether>true</KeepTogether>
                           <Style />
                         </Rectangle>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -1572,6 +1573,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
               <ZIndex>1</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>5pt</PaddingLeft>
               </Style>
             </Textbox>
             <Textbox Name="CustAddr71">
@@ -1595,6 +1597,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
               <ZIndex>2</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>5pt</PaddingLeft>
               </Style>
             </Textbox>
             <Textbox Name="CustAddr61">
@@ -1618,6 +1621,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
               <ZIndex>3</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>5pt</PaddingLeft>
               </Style>
             </Textbox>
             <Textbox Name="CustAddr51">
@@ -1641,6 +1645,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
               <ZIndex>4</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>5pt</PaddingLeft>
               </Style>
             </Textbox>
             <Textbox Name="CustAddr41">
@@ -1664,6 +1669,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
               <ZIndex>5</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>5pt</PaddingLeft>
               </Style>
             </Textbox>
             <Textbox Name="CustAddr31">
@@ -1687,6 +1693,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
               <ZIndex>6</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>5pt</PaddingLeft>
               </Style>
             </Textbox>
             <Textbox Name="CustAddr21">
@@ -1710,6 +1717,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
               <ZIndex>7</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>5pt</PaddingLeft>
               </Style>
             </Textbox>
             <Textbox Name="CustAddr11">
@@ -1733,6 +1741,7 @@ Fields!SellToCustomerNo.Value)</Hidden>
               <ZIndex>8</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>5pt</PaddingLeft>
               </Style>
             </Textbox>
             <Textbox Name="SalesOrderNoCaption1">

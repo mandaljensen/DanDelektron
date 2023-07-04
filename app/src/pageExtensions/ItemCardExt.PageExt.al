@@ -20,4 +20,26 @@ pageextension 50003 "Item Card Ext." extends "Item Card"
             }
         }
     }
+    actions
+    {
+        addlast(Reporting)
+        {
+            action(ItemLabel)
+            {
+                Caption = 'Item Label';
+                ApplicationArea = All;
+                ToolTip = 'Executes the Item Label action.';
+                Image = Report;
+
+                trigger OnAction()
+                var
+                    Item: Record Item;
+                begin
+                    Item.Reset();
+                    Item.SetRange("No.", Rec."No.");
+                    Report.RunModal(Report::"Item Label", true, false, Item);
+                end;
+            }
+        }
+    }
 }
