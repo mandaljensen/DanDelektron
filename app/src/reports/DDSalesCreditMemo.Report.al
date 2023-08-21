@@ -395,6 +395,7 @@ report 50005 "DD Sales Credit Memo"
             column(VATClause_Lbl; VATClause.TableCaption())
             {
             }
+
             dataitem(Line; "Sales Cr.Memo Line")
             {
                 DataItemLink = "Document No." = FIELD("No.");
@@ -499,6 +500,12 @@ report 50005 "DD Sales Credit Memo"
                     AutoFormatExpression = Header."Currency Code";
                     AutoFormatType = 1;
                 }
+                column(JobNo_Lbl; JobNoLbl)
+                {
+                }
+                column(JobNo; JobNo)
+                {
+                }
                 dataitem(ShipmentLine; "Sales Shipment Buffer")
                 {
                     DataItemTableView = SORTING("Document No.", "Line No.", "Entry No.");
@@ -569,6 +576,15 @@ report 50005 "DD Sales Credit Memo"
                         LineDiscountPctText := ''
                     else
                         LineDiscountPctText := StrSubstNo('%1%', -Round("Line Discount %", 0.1));
+
+                    JobNo := Line."Job No.";
+
+                    if JobNo <> '' then
+                        JobNoLbl := JobNoLbl2
+                    else
+                        JobNoLbl := '';
+
+
 
                     VATAmountLine.Init();
                     VATAmountLine."VAT Identifier" := "VAT Identifier";
@@ -813,6 +829,17 @@ report 50005 "DD Sales Credit Memo"
                     CreateReportTotalLines();
                 end;
             }
+            dataitem(RightHeader; "Name/Value Buffer")
+            {
+                DataItemTableView = SORTING(ID);
+                UseTemporary = true;
+                column(RightHeaderName; Name)
+                {
+                }
+                column(RightHeaderValue; Value)
+                {
+                }
+            }
             dataitem(LetterText; "Integer")
             {
                 DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
@@ -891,6 +918,9 @@ report 50005 "DD Sales Credit Memo"
 
                 FormatAddressFields(Header);
                 FormatDocumentFields(Header);
+
+                FillRightHeader();
+
                 if SellToContact.Get("Sell-to Contact No.") then;
                 if BillToContact.Get("Bill-to Contact No.") then;
 
@@ -1049,7 +1079,6 @@ report 50005 "DD Sales Credit Memo"
         AppliesToText: Text;
         CurrCode: Text[10];
         CurrSymbol: Text[10];
-
         SalesCreditMemoNoLbl: Label 'Sales - Credit Memo %1';
         SalespersonLbl: Label 'Sales person';
         CompanyInfoBankAccNoLbl: Label 'Account No.';
@@ -1097,6 +1126,9 @@ report 50005 "DD Sales Credit Memo"
         BodyLbl: Label 'Thank you for your business. Your credit memo is attached to this message.';
         LCYTxt: label ' (LCY)';
         VATClauseText: Text;
+        JobNo: Code[20];
+        JobNoLbl: Text;
+        JobNoLbl2: Label 'Job No.';
 
     protected var
         PaymentTerms: Record "Payment Terms";
@@ -1172,6 +1204,61 @@ report 50005 "DD Sales Credit Memo"
             end;
         end;
         exit(Header."Posting Date");
+    end;
+
+    local procedure FillRightHeader()
+    var
+        IsHandled: Boolean;
+    begin
+        IsHandled := false;
+        OnBeforeFillRightHeader(Header, SalespersonPurchaser, SalesPersonText, RightHeader, IsHandled);
+        if not IsHandled then begin
+            RightHeader.DeleteAll();
+
+            /*
+            FillNameValueTable(RightHeader, EMailLbl, CompanyInfo."E-Mail");
+            FillNameValueTable(RightHeader, HomePageLbl, CompanyInfo."Home Page");
+            FillNameValueTable(RightHeader, CompanyInfoPhoneNoLbl, CompanyInfo."Phone No.");
+            FillNameValueTable(RightHeader, CompanyInfo.GetRegistrationNumberLbl(), CompanyInfo.GetRegistrationNumber());
+            FillNameValueTable(RightHeader, CompanyInfo.GetVATRegistrationNumberLbl(), CompanyInfo.GetVATRegistrationNumber());
+            FillNameValueTable(RightHeader, CompanyInfoBankNameLbl, CompanyBankAccount.Name);
+            FillNameValueTable(RightHeader, CompanyInfoGiroNoLbl, CompanyInfo."Giro No.");
+            FillNameValueTable(RightHeader, CompanyBankAccount.FieldCaption(IBAN), CompanyBankAccount.IBAN);
+            FillNameValueTable(RightHeader, CompanyBankAccount.FieldCaption("SWIFT Code"), CompanyBankAccount."SWIFT Code");
+            FillNameValueTable(RightHeader, Header.GetPaymentReferenceLbl(), Header.GetPaymentReference()); 
+            */
+
+            FillNameValueTable(RightHeader, Header.FieldCaption("External Document No."), Header."External Document No.");
+            FillNameValueTable(RightHeader, Header.FieldCaption("Bill-to Customer No."), Header."Bill-to Customer No.");
+            FillNameValueTable(RightHeader, Header.GetCustomerVATRegistrationNumberLbl(), Header.GetCustomerVATRegistrationNumber());
+            FillNameValueTable(RightHeader, Header.GetCustomerGlobalLocationNumberLbl(), Header.GetCustomerGlobalLocationNumber());
+            FillNameValueTable(RightHeader, InvNoLbl, Header."No.");
+            FillNameValueTable(RightHeader, Header.FieldCaption("Document Date"), Format(Header."Document Date", 0, 4));
+            FillNameValueTable(RightHeader, Header.FieldCaption("Due Date"), Format(Header."Due Date", 0, 4));
+            FillNameValueTable(RightHeader, PaymentTermsDescLbl, PaymentTerms.Description);
+            FillNameValueTable(RightHeader, PaymentMethodDescLbl, PaymentMethod.Description);
+            FillNameValueTable(RightHeader, Cust.GetLegalEntityTypeLbl(), Cust.GetLegalEntityType());
+            FillNameValueTable(RightHeader, ShptMethodDescLbl, ShipmentMethod.Description);
+
+            OnAfterFillRightHeader(RightHeader, Header);
+        end;
+    end;
+
+    local procedure FillNameValueTable(var NameValueBuffer: Record "Name/Value Buffer"; Name: Text; Value: Text)
+    var
+        KeyIndex: Integer;
+    begin
+        if Value <> '' then begin
+            Clear(NameValueBuffer);
+            if NameValueBuffer.FindLast() then
+                KeyIndex := NameValueBuffer.ID + 1;
+
+            NameValueBuffer.Init();
+            NameValueBuffer.ID := KeyIndex;
+            NameValueBuffer.Name := CopyStr(Name, 1, MaxStrLen(NameValueBuffer.Name));
+            NameValueBuffer.Value := CopyStr(Value, 1, MaxStrLen(NameValueBuffer.Value));
+            NameValueBuffer.Insert();
+        end;
     end;
 
     local procedure IsReportInPreviewMode(): Boolean
@@ -1276,6 +1363,16 @@ report 50005 "DD Sales Credit Memo"
 
     [IntegrationEvent(false, false)]
     local procedure OnLineOnAfterGetRecordOnBeforeCheckLineDiscount(var SalesCrMemoLine: Record "Sales Cr.Memo Line"; var SalesCrMemoHeader: Record "Sales Cr.Memo Header")
+    begin
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnBeforeFillRightHeader(Header: Record "Sales Cr.Memo Header"; SalespersonPurchaser: Record "Salesperson/Purchaser"; SalesPersonText: Text[50]; arg: Variant; var IsHandled: Boolean)
+    begin
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnAfterFillRightHeader(arg: Variant; Header: Record "Sales Cr.Memo Header")
     begin
     end;
 }
