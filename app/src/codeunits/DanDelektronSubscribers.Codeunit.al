@@ -17,8 +17,11 @@ codeunit 50000 "Dan Delektron Subscribers"
         JobsSetup: Record "Jobs Setup";
         JobTask: Record "Job Task";
     begin
+        if Job."No." = '' then
+            Job.Insert(true);
+
         JobsSetup.Get();
-        if (Job."No." <> '') and (JobsSetup."Default Job Task No." <> '') then
+        if JobsSetup."Default Job Task No." <> '' then
             if not JobTask.Get(Job."No.", JobsSetup."Default Job Task No.") then begin
                 JobTask.Init();
                 JobTask."Job No." := Job."No.";
@@ -46,10 +49,19 @@ codeunit 50000 "Dan Delektron Subscribers"
         Job.TestField("External Document No.");
     end;
 
-    // TODO: Remove after opening values is posted.
-    [EventSubscriber(ObjectType::Table, Database::Job, 'OnBeforeUpdateOverBudgetValue', '', true, false)]
-    local procedure SetIsHandledTemp(var Job: Record Job; JobNo: Code[20]; Usage: Boolean; Cost: Decimal; var IsHandled: Boolean)
+    [EventSubscriber(ObjectType::Table, Database::"Vendor Ledger Entry", 'OnBeforeSetStyle', '', false, false)]
+    local procedure OnBeforeSetStyleOnClosedEntry(sender: Record "Vendor Ledger Entry"; var Result: Text; var IsHandled: Boolean)
     begin
-        IsHandled := true;
+        if not sender.Open then begin
+            Result := '';
+            IsHandled := true;
+        end;
     end;
+
+    // TODO: Remove after opening values is posted.
+    // [EventSubscriber(ObjectType::Table, Database::Job, 'OnBeforeUpdateOverBudgetValue', '', true, false)]
+    // local procedure SetIsHandledTemp(var Job: Record Job; JobNo: Code[20]; Usage: Boolean; Cost: Decimal; var IsHandled: Boolean)
+    // begin
+    //     IsHandled := true;
+    // end;
 }
