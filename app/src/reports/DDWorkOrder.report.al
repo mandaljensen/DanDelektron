@@ -113,7 +113,7 @@ report 50000 "DD Work Order"
                     {
                         IncludeCaption = true;
                     }
-                    column(Quantity_SalesLine; Quantity)
+                    column(Quantity_SalesLine; "Sales Line"."Qty. to Ship (Base)")
                     {
                         IncludeCaption = true;
                     }
