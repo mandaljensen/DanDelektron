@@ -395,6 +395,7 @@ report 50005 "DD Sales Credit Memo"
             column(VATClause_Lbl; VATClause.TableCaption())
             {
             }
+            column(HeaderJobNo; SalesCrMemoLine."Job No.") { }
 
             dataitem(Line; "Sales Cr.Memo Line")
             {
@@ -945,6 +946,16 @@ report 50005 "DD Sales Credit Memo"
                         CurrSymbol := GeneralLedgerSetup.GetCurrencySymbol();
                     end;
 
+                SalesCrMemoLine.SETRANGE("Document No.", Header."No.");
+                SalesCrMemoLine.SETFILTER(SalesCrMemoLine."Job No.", '<>%1', '');
+                if not SalesCrMemoLine.FindFirst() then
+                    CLEAR(SalesCrMemoLine);
+
+                if SalesCrMemoLine."Job No." <> '' then
+                    JobNoLbl := JobNoLbl2
+                else
+                    JobNoLbl := '';
+
                 TotalSubTotal := 0;
                 TotalInvDiscAmount := 0;
                 TotalAmount := 0;
@@ -1167,6 +1178,7 @@ report 50005 "DD Sales Credit Memo"
         TotalVATBaseLCY: Decimal;
         TotalVATAmountLCY: Decimal;
 
+        SalesCrMemoLine: Record "Sales Cr.Memo Line";
         VATAmtLbl: Label 'VAT Amount';
 
     local procedure InitLogInteraction()
