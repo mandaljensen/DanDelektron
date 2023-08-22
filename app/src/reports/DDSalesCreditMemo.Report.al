@@ -439,8 +439,9 @@ report 50005 "DD Sales Credit Memo"
                     AutoFormatExpression = GetCurrencyCode();
                     AutoFormatType = 1;
                 }
-                column(LineAmount_Line_Lbl; FieldCaption("Line Amount"))
+                column(LineAmount_Line_Lbl; AmountCaptionLbl)
                 {
+
                 }
                 column(ItemNo_Line; "No.")
                 {
@@ -474,7 +475,7 @@ report 50005 "DD Sales Credit Memo"
                     AutoFormatExpression = GetCurrencyCode();
                     AutoFormatType = 2;
                 }
-                column(UnitPrice_Lbl; FieldCaption("Unit Price"))
+                column(UnitPrice_Lbl; UnitpriceCaptionlbl)
                 {
                 }
                 column(UnitOfMeasure; "Unit of Measure")
@@ -983,12 +984,12 @@ report 50005 "DD Sales Credit Memo"
                         Caption = 'Show Assembly Components';
                         ToolTip = 'Specifies if you want the report to include information about components that were used in linked assembly orders that supplied the item(s) being sold.';
                     }
-                    field(DisplayShipmentInformation; DisplayShipmentInformation)
-                    {
-                        ApplicationArea = Basic, Suite;
-                        Caption = 'Show Shipments';
-                        ToolTip = 'Specifies that shipments are shown on the document.';
-                    }
+                    // field(DisplayShipmentInformation; DisplayShipmentInformation)
+                    // {
+                    //     ApplicationArea = Basic, Suite;
+                    //     Caption = 'Show Shipments';
+                    //     ToolTip = 'Specifies that shipments are shown on the document.';
+                    // }
                 }
             }
         }
@@ -1129,6 +1130,8 @@ report 50005 "DD Sales Credit Memo"
         JobNo: Code[20];
         JobNoLbl: Text;
         JobNoLbl2: Label 'Job No.';
+        UnitPriceCaptionLbl: Label 'Unit Price';
+        AmountCaptionLbl: Label 'Amount';
 
     protected var
         PaymentTerms: Record "Payment Terms";
