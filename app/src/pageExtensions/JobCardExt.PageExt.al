@@ -1,5 +1,6 @@
 pageextension 50000 "Job Card Ext." extends "Job Card"
 {
+    DataCaptionExpression = Rec."No." + ' ' + Rec."Job Name";
     layout
     {
         addafter(General)
@@ -150,5 +151,9 @@ pageextension 50000 "Job Card Ext." extends "Job Card"
             }
         }
         movebefore("DD Description 2"; Description)
+        modify("% Completed")
+        {
+            Visible = false;
+        }
     }
 }

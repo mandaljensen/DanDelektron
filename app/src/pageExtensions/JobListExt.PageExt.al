@@ -9,7 +9,11 @@ pageextension 50008 "Job List Ext." extends "Job List"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Job Name field.';
             }
-
+            field("Finished in %"; Rec."Finished in %")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Finished in % field.';
+            }
         }
         addafter("Bill-to Customer No.")
         {

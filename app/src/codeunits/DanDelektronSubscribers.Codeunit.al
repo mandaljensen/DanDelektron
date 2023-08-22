@@ -64,4 +64,24 @@ codeunit 50000 "Dan Delektron Subscribers"
     // begin
     //     IsHandled := true;
     // end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Purchase Line", OnBeforeSetVendorItemNo, '', false, false)]
+    local procedure OnBeforeSetVendorItemNo(var PurchaseLine: Record "Purchase Line"; var IsHandled: Boolean);
+    var
+        Itemvend: Record "Item Vendor";
+        Item: Record Item;
+    begin
+        item.Get(PurchaseLine."No.");
+
+        ItemVend.Init();
+        ItemVend."Vendor No." := PurchaseLine."Buy-from Vendor No.";
+        ItemVend."Variant Code" := PurchaseLine."Variant Code";
+
+        Item.FindItemVend(ItemVend, PurchaseLine."Location Code");
+        if Itemvend."Vendor No." = PurchaseLine."Buy-from Vendor No." then
+            PurchaseLine.Validate("Vendor Item No.", ItemVend."Vendor Item No.");
+        IsHandled := true;
+
+    end;
+
 }
