@@ -1,8 +1,11 @@
-Report 50026 "Item Ledger - Negative Stock"
+/// <summary>
+/// Report Item Ledger - Negative Stock (ID 50026).
+/// </summary>
+Report 50026 "DDItem Ledger - Negative Stock"
 {
     Caption = 'Negative Inventory';
-    RDLCLayout = './src/Layouts/ItemLedgerNegativeStock.rdlc';
     DefaultLayout = RDLC;
+    RDLCLayout = './src/Layouts/ItemLedgerNegativeStock.rdlc';
 
 
     dataset
@@ -80,7 +83,7 @@ Report 50026 "Item Ledger - Negative Stock"
 
     var
         Item: Record Item;
-        Text: Text[128];
         PageLbl: Label 'Page';
         ReportNameLbl: label 'ItemLedger - Negative Stock';
+        Text: Text[128];
 }
