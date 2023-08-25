@@ -3,6 +3,96 @@
   <file datatype="xml" source-language="en-US" target-language="da-DK" original="Dan Delektron Core.g.xlf">
     <body>
       <group id="body">
+        <trans-unit id="Report 2209752607 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Quote</source>
+          <target>Sagstilbud</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - NamedType 684809554" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Side</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - NamedType CurrReportPageNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - NamedType 817831222" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beskrivelse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - NamedType DescriptionCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - NamedType 4281516483" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Quote</source>
+          <target>Sagstilbud</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - NamedType JobQuoteCaptLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - NamedType 3585426961" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Task No.</source>
+          <target>Sagsopgavenr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - NamedType JobTaskNoCaptLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - NamedType 3160416676" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Task Type</source>
+          <target>Sagsopgavetype</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - NamedType JobTaskTypeLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - NamedType 1314000525" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <target>Nummer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - NamedType NoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - NamedType 2174691427" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <target>Antal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - NamedType QuantityLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - NamedType 2039684796" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to Address</source>
+          <target>Leveringsadresse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - NamedType ShiptoAddrLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - NamedType 2772987805" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Cost</source>
+          <target>Kostbeløb i alt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - NamedType TotalCostLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - NamedType 2410138484" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <target>I alt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - NamedType TotalLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - NamedType 3675848865" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Cost</source>
+          <target>Kostpris</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - NamedType UnitCostLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - Method 1973795112 - NamedType 3310014495" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1&lt;precision, 2:2&gt;&lt;standard format, 0&gt;</source>
+          <target>%1&lt;præcision 2:2&gt;&lt;standardformat 0&gt;</target>
+          <note from="Developer" annotates="general" priority="2">%1=CurrencySymbol</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - Method ConstructCurrencyFormatString - NamedType CurrencyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportLabel 2856842045" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beskrivelse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportLabel JobDescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportLabel 3184947576" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job No.</source>
+          <target>Sagsnr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportLabel JobNoLbl</note>
+        </trans-unit>
         <trans-unit id="Report 8365983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purchase Order</source>
           <target>Købsordre</target>
@@ -686,18 +776,6 @@
           <target>Vis montagekomponenter</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report DD Sales Credit Memo - Control DisplayAsmInformation - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 3671767537 - Control 4222219250 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies that shipments are shown on the document.</source>
-          <target>Angiver, at leverancer vises i dokumentet.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report DD Sales Credit Memo - Control DisplayShipmentInformation - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 3671767537 - Control 4222219250 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Show Shipments</source>
-          <target>Vis leverancer</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report DD Sales Credit Memo - Control DisplayShipmentInformation - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 3671767537 - Control 816368762 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies that interactions with the contact are logged.</source>
@@ -1629,6 +1707,24 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report DD Work Order - ReportDataItem Sales Header - Property RequestFilterHeading</note>
         </trans-unit>
+        <trans-unit id="Report 2706010474 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Negative Inventory</source>
+          <target>Negativt lager</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DDItem Ledger - Negative Stock - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2706010474 - NamedType 1877187315" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Side</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DDItem Ledger - Negative Stock - NamedType PageLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2706010474 - NamedType 617781293" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ItemLedger - Negative Stock</source>
+          <target>Varepost - Negativt lager</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DDItem Ledger - Negative Stock - NamedType ReportNameLbl</note>
+        </trans-unit>
         <trans-unit id="Report 514741837 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Label</source>
           <target>Vare label</target>
@@ -1778,6 +1874,12 @@
           <target>Angiver værdien af feltet Hovedlager.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item List Ext. - Control Main Location - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 349877888 - Control 4230565839 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3453572869">
+          <source>Specifies the value of the No. 2 field.</source>
+          <target>Angiver værdien af feltet Nr. 2.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Items by Location Matrix Ext. - Control No. 2 - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 4087887968 - Control 4016633481 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Dan Delektron</source>
@@ -1983,6 +2085,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job Card Ext. - Control Status QC - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1447382022 - Control 3177069940 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2273701615">
+          <source>Specifies the value of the Finished in % field.</source>
+          <target>Angiver værdien af feltet Udført i %.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job List Ext. - Control Finished in % - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1447382022 - Control 2311232812 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2273701615">
           <source>Specifies the value of the Job Name field.</source>
           <target>Angiver værdien af feltet Job navn.</target>
@@ -2036,6 +2144,12 @@
           <target>Angiver værdien af feltet Leverandørs varenr.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Purchase Order Subform Ext. - Control Vendor Item No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3063118402 - Control 2682724073 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3195034673">
+          <source>Specifies the value of the No. Printed field.</source>
+          <target>Angiver værdien af feltet No. Printed.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PurchaseOrderListExt - Control No. Printed - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="TableExtension 1684746270 - Field 353228690 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Main Location</source>
@@ -2210,6 +2324,102 @@
           <target>Skjul</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Location Ext. - Field Hide - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - ReportLabel 3184947576" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job No.</source>
+          <target>Sagsnr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - ReportLabel JobNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - ReportLabel 2856842045" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beskrivelse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - ReportLabel JobDescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - NamedType 684809554" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Side</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - NamedType CurrReportPageNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - NamedType 817831222" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beskrivelse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - NamedType DescriptionCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - NamedType 4281516483" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Quote</source>
+          <target>Sagstilbud</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - NamedType JobQuoteCaptLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - NamedType 3585426961" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Task No.</source>
+          <target>Sagsopgavenr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - NamedType JobTaskNoCaptLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - NamedType 3160416676" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Task Type</source>
+          <target>Sagsopgavetype</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - NamedType JobTaskTypeLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - NamedType 1314000525" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <target>Nummer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - NamedType NoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - NamedType 2174691427" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <target>Antal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - NamedType QuantityLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - NamedType 2772987805" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Cost</source>
+          <target>Kostbeløb i alt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - NamedType TotalCostLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - NamedType 2410138484" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <target>I alt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - NamedType TotalLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - NamedType 3675848865" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Cost</source>
+          <target>Kostpris</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - NamedType UnitCostLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - NamedType 2039684796" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to Address</source>
+          <target>Leveringsadresse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - NamedType ShiptoAddrLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2209752607 - ReportColumn 2427956705 - Method 1973795112 - NamedType 3310014495" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1&lt;precision, 2:2&gt;&lt;standard format, 0&gt;</source>
+          <target>%1&lt;præcision 2:2&gt;&lt;standardformat 0&gt;</target>
+          <note from="Developer" annotates="general" priority="2">%1=CurrencySymbol</note>
+         <note from="Xliff Generator" annotates="general" priority="3">Report DD Job Quote - ReportColumn BilltoCustumerNo - Method ConstructCurrencyFormatString - NamedType CurrencyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2706010474 - ReportColumn 1946909041 - NamedType 1877187315" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Side</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DDItem Ledger - Negative Stock - ReportColumn ItemLedgerEntry_PostingDate - NamedType PageLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2706010474 - ReportColumn 1946909041 - NamedType 617781293" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ItemLedger - Negative Stock</source>
+          <target>Varepost - Negativt lager</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DDItem Ledger - Negative Stock - ReportColumn ItemLedgerEntry_PostingDate - NamedType ReportNameLbl</note>
         </trans-unit>
       </group>
     </body>

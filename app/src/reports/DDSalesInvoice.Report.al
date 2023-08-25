@@ -459,6 +459,8 @@ report 50002 "DD Sales Invoice"
             column(FIKPaymentLine; FIKPaymentLine)
             {
             }
+            column(HeaderJobNo; SalesInvLine."Job No.") { }
+
             dataitem(Line; "Sales Invoice Line")
             {
                 DataItemLink = "Document No." = FIELD("No.");
@@ -690,7 +692,7 @@ report 50002 "DD Sales Invoice"
                         JobTaskDescription := '';
                         JobTaskNoLbl := '';
                     end;
-
+                    JobNo := "Job No.";
                     if JobNo <> '' then
                         JobNoLbl := JobNoLbl2
                     else
@@ -1175,6 +1177,17 @@ report 50002 "DD Sales Invoice"
 
                 BankIBANLine := StrSubstNo(BankIBANCaptionLbl, CompanyInfo.IBAN);
                 BankSWIFTLine := StrSubstNo(BankSWIFTCaptionLbl, CompanyInfo."SWIFT Code");
+
+                SalesInvLine.SETRANGE("Document No.", Header."No.");
+                SalesInvLine.SETFILTER(SalesInvLine."Job No.", '<>%1', '');
+                if not SalesInvLine.FindFirst() then
+                    CLEAR(SalesInvLine);
+
+                if SalesInvLine."Job No." <> '' then
+                    JobNoLbl := JobNoLbl2
+                else
+                    JobNoLbl := '';
+
             end;
 
             trigger OnPreDataItem()
@@ -1289,6 +1302,7 @@ report 50002 "DD Sales Invoice"
         VATClause: Record "VAT Clause";
         SellToContact: Record Contact;
         BillToContact: Record Contact;
+        SalesInvLine: Record "Sales Invoice Line";
         Item: Record Item;
         Language: Codeunit Language;
         FormatAddr: Codeunit "Format Address";
