@@ -7,7 +7,6 @@
         <DataProvider>SQL</DataProvider>
         <ConnectString />
       </ConnectionProperties>
-      <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>f39c0731-6201-46a2-95fa-37d1498e244b</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -37,7 +36,7 @@
                                     <Width>1.26796cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1.74566cm</Width>
+                                    <Width>2.0367cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>1.41796cm</Width>
@@ -58,7 +57,7 @@
                                     <Width>1.7734cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2.01796cm</Width>
+                                    <Width>1.72692cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>2.01796cm</Width>
