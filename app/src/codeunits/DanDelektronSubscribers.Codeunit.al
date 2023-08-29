@@ -58,24 +58,25 @@ codeunit 50000 "Dan Delektron Subscribers"
         end;
     end;
 
-    [EventSubscriber(ObjectType::Table, Database::"Purchase Line", OnBeforeSetVendorItemNo, '', false, false)]
-    local procedure OnBeforeSetVendorItemNo(var PurchaseLine: Record "Purchase Line"; var IsHandled: Boolean);
+    [EventSubscriber(ObjectType::Table, Database::"Purchase Line", OnAfterUpdateVendorItemNoFromItemReference, '', false, false)]
+    local procedure OnAfterUpdateVendorItemNoFromItemReference(var Rec: Record "Purchase Line"; xRec: Record "Purchase Line");
     var
         Itemvend: Record "Item Vendor";
         Item: Record Item;
     begin
-        item.Get(PurchaseLine."No.");
+        item.Get(Rec."No.");
 
         ItemVend.Init();
-        ItemVend."Vendor No." := PurchaseLine."Buy-from Vendor No.";
-        ItemVend."Variant Code" := PurchaseLine."Variant Code";
+        ItemVend."Vendor No." := Rec."Buy-from Vendor No.";
+        ItemVend."Variant Code" := Rec."Variant Code";
 
-        Item.FindItemVend(ItemVend, PurchaseLine."Location Code");
-        if Itemvend."Vendor No." = PurchaseLine."Buy-from Vendor No." then
-            PurchaseLine.Validate("Vendor Item No.", ItemVend."Vendor Item No.");
-        IsHandled := true;
-
+        Item.FindItemVend(ItemVend, Rec."Location Code");
+        if Itemvend."Vendor No." = Rec."Buy-from Vendor No." then
+            Rec.Validate("Vendor Item No.", ItemVend."Vendor Item No.")
+        else
+            Rec.Validate("Vendor Item No.", '')
     end;
+
 
     [EventSubscriber(ObjectType::Table, Database::Job, 'OnBeforeUpdateOverBudgetValue', '', true, false)]
     local procedure SetIsHandledTemp(var Job: Record Job; JobNo: Code[20]; Usage: Boolean; Cost: Decimal; var IsHandled: Boolean)
