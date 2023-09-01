@@ -2061,11 +2061,23 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job List Ext. - Control Bill-to Name - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1447382022 - Control 3889689064 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2273701615">
+          <source>Specifies the value of the Billable price field.</source>
+          <target>Angiver værdien af feltet Fakturerbar pris.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job List Ext. - Control Billable price - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1447382022 - Control 243748095 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2273701615">
           <source>Specifies the value of the Contact Person field.</source>
           <target>Angiver værdien af feltet Kontaktperson.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job List Ext. - Control Contact Person - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1447382022 - Control 2601842426 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2273701615">
+          <source>Specifies the value of the Cost price field.</source>
+          <target>Angiver værdien af feltet Kostpris.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job List Ext. - Control Cost price - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1447382022 - Control 1527563463 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2273701615">
           <source>Specifies the value of the External Document No. field.</source>
@@ -2127,6 +2139,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Atex (report) - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 3889689064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Billable price</source>
+          <target>Fakturerbar pris.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Billable price - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3672691964 - Field 243748095 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>Contact Person</source>
           <target>Kontaktperson</target>
@@ -2138,6 +2156,12 @@
           <target>Kontaktperson KS</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Contact Person QC - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 2601842426 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Cost price</source>
+          <target>Kostpris</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Cost price - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3672691964 - Field 1920065008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>Description 2</source>
