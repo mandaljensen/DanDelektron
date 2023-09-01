@@ -693,10 +693,6 @@ report 50002 "DD Sales Invoice"
                         JobTaskNoLbl := '';
                     end;
                     JobNo := "Job No.";
-                    if JobNo <> '' then
-                        JobNoLbl := JobNoLbl2
-                    else
-                        JobNoLbl := '';
 
                     Clear(Item);
                     if Line.Type = Line.Type::Item then
