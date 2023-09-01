@@ -203,20 +203,19 @@ report 50006 "DD Job Quote"
         CurrencyFormat := StrSubstNo(CurrencyLbl, CurrencySymbol);
     end;
 
-    local procedure JobShipTo(ShipToAddr: array[8] of Text[100]; BillToAddr: array[8] of Text[100]; Job: Record Job): Boolean
+    local procedure JobShipTo(var Shipto: array[8] of Text[100]; BillToAddr: array[8] of Text[100]; Job: Record Job): Boolean
     var
         IsHandled: Boolean;
         i: Integer;
     begin
 
-        FormatAddr.FormatAddr(ShipToAddr, Job."Ship-to Name", Job."Ship-to Name 2", Job."Ship-to Contact", Job."Ship-to Address", Job."Ship-to Address 2",
+        FormatAddr.FormatAddr(Shipto, Job."Ship-to Name", Job."Ship-to Name 2", Job."Ship-to Contact", Job."Ship-to Address", Job."Ship-to Address 2",
                                 Job."Ship-to City", Job."Ship-to Post Code", Job."Ship-to County", Job."Ship-to Country/Region Code");
         if Job."Sell-to Customer No." <> Job."Bill-to Customer No." then
             exit(true);
-        for i := 1 to ArrayLen(ShipToAddr) do
-            if ShipToAddr[i] <> BillToAddr[i] then
+        for i := 1 to ArrayLen(Shipto) do
+            if Shipto[i] <> BillToAddr[i] then
                 exit(true);
-
         exit(false);
     end;
 
