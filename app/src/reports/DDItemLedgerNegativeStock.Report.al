@@ -6,7 +6,8 @@ Report 50026 "DDItem Ledger - Negative Stock"
     Caption = 'Negative Inventory';
     DefaultLayout = RDLC;
     RDLCLayout = './src/Layouts/ItemLedgerNegativeStock.rdlc';
-
+    ApplicationArea = All;
+    UsageCategory = ReportsAndAnalysis;
 
     dataset
     {
@@ -48,6 +49,7 @@ Report 50026 "DDItem Ledger - Negative Stock"
             column(ItemLedgerEntry_PostingDate; "Item Ledger Entry"."Posting Date") { }
             column(ItemLedgerEntry_ItemNo; "Item Ledger Entry"."Item No.") { }
             column(ItemLedgerEntry_EntryNo; "Item Ledger Entry"."Entry No.") { }
+
             trigger OnAfterGetRecord();
             begin
                 if Item.Get("Item No.") then begin
