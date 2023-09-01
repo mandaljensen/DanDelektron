@@ -1051,7 +1051,7 @@
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
-                                    <Format>=Fields!TotalCostLCYFormat.Value</Format>
+                                    <Format>=Fields!Quote__nettoFormat.Value</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1062,6 +1062,9 @@
                           </Paragraphs>
                           <rd:DefaultName>Quote__netto</rd:DefaultName>
                           <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
                             <VerticalAlign>Top</VerticalAlign>
                             <PaddingLeft>5pt</PaddingLeft>
                           </Style>
@@ -1113,7 +1116,7 @@
             <PageBreak>
               <BreakLocation>End</BreakLocation>
             </PageBreak>
-            <Top>5.49452cm</Top>
+            <Top>4.85952cm</Top>
             <Left>0.00245in</Left>
             <Height>2.49648cm</Height>
             <Width>18.54477cm</Width>
@@ -1122,40 +1125,6 @@
               <FontSize>8pt</FontSize>
             </Style>
           </Tablix>
-          <Textbox Name="JobTaskTABLECAPTIONFilter">
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=First(Fields!JobTasktableCaptFilter.Value)</Value>
-                    <Style>
-                      <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>8pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <FontFamily>Segoe UI</FontFamily>
-                  <FontSize>8pt</FontSize>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <Top>4.73335cm</Top>
-            <Height>11pt</Height>
-            <Width>18.55097cm</Width>
-            <ZIndex>1</ZIndex>
-            <Visibility>
-              <Hidden>=IIF(Fields!JobTaskFilter.Value = "", True,False)</Hidden>
-            </Visibility>
-            <DataElementOutput>NoOutput</DataElementOutput>
-            <Style>
-              <FontFamily>Segoe UI</FontFamily>
-              <FontSize>8pt</FontSize>
-              <PaddingRight>0.0625in</PaddingRight>
-            </Style>
-          </Textbox>
           <Textbox Name="JobTABLECAPTIONJobFilter">
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
@@ -1179,7 +1148,7 @@
             <Top>1.69547in</Top>
             <Height>11pt</Height>
             <Width>18.55097cm</Width>
-            <ZIndex>2</ZIndex>
+            <ZIndex>1</ZIndex>
             <Visibility>
               <Hidden>=IIF(Fields!JobFilter.Value = "", True,False)</Hidden>
             </Visibility>
@@ -2394,7 +2363,7 @@
             <Left>0.00622cm</Left>
             <Height>3.70448cm</Height>
             <Width>18.54475cm</Width>
-            <ZIndex>3</ZIndex>
+            <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2956,11 +2925,11 @@
                 </FilterValues>
               </Filter>
             </Filters>
-            <Top>9.3884cm</Top>
+            <Top>8.7534cm</Top>
             <Left>0.00245in</Left>
             <Height>3.88058cm</Height>
             <Width>18.02485cm</Width>
-            <ZIndex>4</ZIndex>
+            <ZIndex>3</ZIndex>
             <Visibility>
               <Hidden>=Fields!ShowShippingAddress.Value</Hidden>
             </Visibility>
@@ -3062,11 +3031,11 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>8.71442cm</Top>
+            <Top>8.07942cm</Top>
             <Left>0.00622cm</Left>
             <Height>0.4cm</Height>
             <Width>7.07324cm</Width>
-            <ZIndex>5</ZIndex>
+            <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -3074,7 +3043,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>5.40277in</Height>
+        <Height>5.10069in</Height>
         <Style>
           <FontFamily>Segoe UI</FontFamily>
           <FontSize>8pt</FontSize>

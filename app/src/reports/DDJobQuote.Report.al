@@ -66,6 +66,7 @@ report 50006 "DD Job Quote"
             }
             column(CompanyPicture; CompanyInfo.Picture)
             {
+
             }
             column(CurrReportPageNoCaption; CurrReportPageNoCaptionLbl)
             {
