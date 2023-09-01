@@ -1183,11 +1183,7 @@ report 50002 "DD Sales Invoice"
                 if not SalesInvLine.FindFirst() then
                     CLEAR(SalesInvLine);
 
-                if SalesInvLine."Job No." <> '' then
-                    JobNoLbl := JobNoLbl2
-                else
-                    JobNoLbl := '';
-
+                JobNoLbl := JobNoLbl2
             end;
 
             trigger OnPreDataItem()

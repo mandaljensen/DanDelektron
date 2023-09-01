@@ -951,10 +951,7 @@ report 50005 "DD Sales Credit Memo"
                 if not SalesCrMemoLine.FindFirst() then
                     CLEAR(SalesCrMemoLine);
 
-                if SalesCrMemoLine."Job No." <> '' then
-                    JobNoLbl := JobNoLbl2
-                else
-                    JobNoLbl := '';
+                JobNoLbl := JobNoLbl2;
 
                 TotalSubTotal := 0;
                 TotalInvDiscAmount := 0;

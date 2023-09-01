@@ -8,12 +8,13 @@ report 50000 "DD Work Order"
     {
         dataitem("Sales Header"; "Sales Header")
         {
-            DataItemTableView = SORTING("Document Type", "No.") WHERE("Document Type" = CONST(Order));
+            DataItemTableView = sorting("Document Type", "No.") where("Document Type" = const(Order));
             RequestFilterFields = "No.", "Sell-to Customer No.";
             RequestFilterHeading = 'Sales Order';
+            PrintOnlyIfDetail = true;
             dataitem(PageLoop; "Integer")
             {
-                DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
+                DataItemTableView = sorting(Number) where(Number = const(1));
                 column(No1_SalesHeader; "Sales Header"."No.")
                 {
                 }
@@ -100,9 +101,9 @@ report 50000 "DD Work Order"
                 }
                 dataitem("Sales Line"; "Sales Line")
                 {
-                    DataItemLink = "Document Type" = FIELD("Document Type"), "Document No." = FIELD("No.");
+                    DataItemLink = "Document Type" = field("Document Type"), "Document No." = field("No.");
                     DataItemLinkReference = "Sales Header";
-                    DataItemTableView = SORTING("Document Type", "Document No.", "Line No.");
+                    DataItemTableView = sorting("Document Type", "Document No.", "Line No.");
                     column(SalesLineNoCaptionLbl; SalesLineNoCaptionLbl)
                     {
                     }
@@ -142,6 +143,10 @@ report 50000 "DD Work Order"
                     column(Promised_Delivery_Date; Format("Promised Delivery Date"))
                     {
                     }
+                    trigger OnPreDataItem()
+                    begin
+                        "Sales Line".SetFilter("Qty. to Ship", '<>0');
+                    end;
 
                     trigger OnAfterGetRecord()
                     begin
@@ -156,9 +161,9 @@ report 50000 "DD Work Order"
                 }
                 dataitem("Sales Comment Line"; "Sales Comment Line")
                 {
-                    DataItemLink = "Document Type" = FIELD("Document Type"), "No." = FIELD("No.");
+                    DataItemLink = "Document Type" = field("Document Type"), "No." = field("No.");
                     DataItemLinkReference = "Sales Header";
-                    DataItemTableView = WHERE("Document Line No." = CONST(0));
+                    DataItemTableView = where("Document Line No." = const(0));
                     column(Date_SalesCommentLine; Format(Date))
                     {
                     }
@@ -180,7 +185,15 @@ report 50000 "DD Work Order"
             }
 
             trigger OnAfterGetRecord()
+            var
+                salesline: Record "Sales Line";
             begin
+                salesline.SetRange("Document Type", "Sales Header"."Document Type");
+                salesline.SetRange("Document No.", "Sales Header"."No.");
+                salesline.SetFilter("Qty. to Ship", '<>0');
+                if salesline.IsEmpty then
+                    CurrReport.Break();
+
                 FormatAddr.SalesHeaderBillTo(BillToAddr, "Sales Header");
                 FormatAddr.SalesHeaderSellTo(CustAddr, "Sales Header");
                 FormatAddr.SalesHeaderShipTo(ShipToAddr, CustAddr, "Sales Header");
@@ -226,5 +239,6 @@ report 50000 "DD Work Order"
         PromisedDeliveryDateCaptionLbl: label 'Delivery Date';
         SalesLineNoCaptionLbl: label 'No.';
         SellToCustomerNoCaptionLbl: Label 'Sell-to Customer No.';
+        NoLinesLbl: Label 'There is no lines with Qty. to ship';
 }
 

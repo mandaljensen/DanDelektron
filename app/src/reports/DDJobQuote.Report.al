@@ -3,12 +3,12 @@
 /// </summary>
 report 50006 "DD Job Quote"
 {
+    ApplicationArea = Basic, Suite;
     Caption = 'Job Quote';
     DefaultLayout = RDLC;
     PreviewMode = PrintLayout;
     RDLCLayout = './src/layouts/DDJobQuote.rdlc';
     UsageCategory = Documents;
-    ApplicationArea = Basic, Suite;
 
     dataset
     {
@@ -66,6 +66,7 @@ report 50006 "DD Job Quote"
             }
             column(CompanyPicture; CompanyInfo.Picture)
             {
+
             }
             column(CurrReportPageNoCaption; CurrReportPageNoCaptionLbl)
             {
@@ -80,9 +81,6 @@ report 50006 "DD Job Quote"
             {
             }
             column(JobTaskFilter; JobTaskFilter)
-            {
-            }
-            column(JobTasktableCaptFilter; "Job Task".TableCaption + ': ' + JobTaskFilter)
             {
             }
             column(No_Job; "No.")
@@ -111,147 +109,9 @@ report 50006 "DD Job Quote"
             column(BilltoCustumerNo; "Bill-to Customer No.") { }
             column(Person_Responsible; Resource.Name) { }
             column(Person_ResponsibleCaption; job.FieldCaption("Person Responsible")) { }
-            dataitem("Job Task"; "Job Task")
-            {
-                DataItemLink = "Job No." = FIELD("No.");
-                DataItemTableView = SORTING("Job No.", "Job Task No.");
-                PrintOnlyIfDetail = true;
-                column(Description_Job; Job.Description)
-                {
-                }
-                column(DescriptionCaption; DescriptionCaptionLbl)
-                {
-                }
-                column(Indentation_JobTask; HeaderJobTask)
-                {
-                }
-                column(JobTaskNo_JobTask; HeaderJobTaskNo)
-                {
-                }
-                column(JobTaskNoCapt; JobTaskNoCaptLbl)
-                {
-                }
-                column(JobTaskTypeCaption; JobTaskTypeLbl)
-                {
-                }
-                column(NewTaskGroup; NewTaskGroup)
-                {
-                }
-                column(NoCaption; NoLbl)
-                {
-                }
-                column(QuantityCaption; QuantityLbl)
-                {
-                }
-                column(TotalCostCaption; TotalCostLbl)
-                {
-                }
-                column(TotalJob; TotalJob)
-                {
-                }
-                column(TotalJobTask; TotalJobTask)
-                {
-                }
-                column(UnitCostCaption; UnitCostLbl)
-                {
-                }
-                dataitem("Job Planning Line";
-                "Job Planning Line")
-                {
-                    DataItemLink = "Job No." = FIELD("Job No."), "Job Task No." = FIELD("Job Task No.");
-                    DataItemTableView = SORTING("Job No.", "Job Task No.", "Line No.");
-                    RequestFilterFields = "Job Task No.";
-                    column(Indentation_JobTask2; PadStr('', 2 * "Job Task".Indentation) + Description)
-                    {
-                    }
-                    column(Indentation_JobTaskTotal; PadStr('', 2 * "Job Task".Indentation) + Description)
-                    {
-                    }
-                    column(JobPlanningLine_JobTaskNo; "Job Task No.")
-                    {
-                    }
-                    column(JobPlanningLine_LineType; "Line Type")
-                    {
-                    }
-                    column(JobPlanningLine_Type; Type)
-                    {
-                    }
-                    column(Number; "No.")
-                    {
-                    }
-                    column(Quantity; Quantity)
-                    {
-                    }
-                    column(ShowIntBody1; "Job Task"."Job Task Type" in ["Job Task"."Job Task Type"::Heading, "Job Task"."Job Task Type"::"Begin-Total"])
-                    {
-                    }
-                    column(ShowIntBody2; "Job Task"."Job Task Type" in ["Job Task"."Job Task Type"::Total, "Job Task"."Job Task Type"::"End-Total"])
-                    {
-                    }
-                    column(ShowIntBody3; ("Job Task"."Job Task Type" in ["Job Task"."Job Task Type"::Posting]) and PrintSection)
-                    {
-                    }
-                    column(TotalCost; "Total Price")
-                    {
-                    }
-                    column(TotalCostLCY; "Total Price (LCY)")
-                    {
-                        AutoFormatExpression = CurrencyFormat;
-                        AutoFormatType = 10;
-                    }
-                    column(Type; Type)
-                    {
-                    }
-                    column(UnitCost; "Unit Price")
-                    {
-                    }
-                    column(UnitCostLCY; "Unit Price (LCY)")
-                    {
-                    }
-
-                    trigger OnAfterGetRecord()
-                    begin
-                        PrintSection := true;
-                        if "Line Type" = "Line Type"::Budget then begin
-                            PrintSection := false;
-                            CurrReport.Skip();
-                        end;
-                        JobTotalValue += ("Unit Price" * Quantity);
-
-                        if FirstLineHasBeenOutput then
-                            Clear(CompanyInfo.Picture);
-                        FirstLineHasBeenOutput := true;
-
-                        ConstructCurrencyFormatString();
-                    end;
-
-                    trigger OnPreDataItem()
-                    begin
-                        CompanyInfo.CalcFields(Picture);
-                    end;
-                }
-
-                trigger OnAfterGetRecord()
-                begin
-                    if "Job Task Type" = "Job Task Type"::"Begin-Total" then begin
-                        if Indentation = 0 then
-                            TotalJob := TotalLbl + ' ' + Description;
-                        HeaderJobTask := PadStr('', 2 * Indentation) + Description;
-                        HeaderJobTaskNo := Format("Job Task No.");
-                        TotalJobTask := PadStr('', 2 * Indentation) + TotalLbl + ' ' + Description;
-                    end;
-
-                    if ((CurrentIndentation > 0) and (CurrentIndentation < Indentation)) or ("Job Task Type" = "Job Task Type"::"End-Total") then
-                        NewTaskGroup := NewTaskGroup + 1;
-
-                    CurrentIndentation := Indentation;
-                end;
-
-                trigger OnPreDataItem()
-                begin
-                    CompanyInfo.CalcFields(Picture);
-                end;
-            }
+            column(DD_Description_2; "DD Description 2") { }
+            column(DD_Description_3; "DD Description 3") { }
+            column(Quote__netto; "Quote, netto") { }
             dataitem(Totals; "Integer")
             {
                 DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
@@ -304,43 +164,27 @@ report 50006 "DD Job Quote"
     trigger OnPreReport()
     begin
         JobFilter := Job.GetFilters();
-        JobTaskFilter := "Job Planning Line".GetFilters();
         CompanyLogoPosition := JobsSetup."Logo Position on Documents";
     end;
 
     var
         CompanyInfo: Record "Company Information";
         JobsSetup: Record "Jobs Setup";
+        Resource: Record Resource;
         FormatAddr: Codeunit "Format Address";
-        FirstLineHasBeenOutput: Boolean;
-        PrintSection: Boolean;
+        ShowShippingAddr: Boolean;
         JobTotalValue: Decimal;
         CompanyLogoPosition: Integer;
-        CurrentIndentation: Integer;
         NewTaskGroup: Integer;
         CurrReportPageNoCaptionLbl: Label 'Page';
-        DescriptionCaptionLbl: Label 'Description';
         JobQuoteCaptLbl: Label 'Job Quote';
-        JobTaskNoCaptLbl: Label 'Job Task No.';
-        JobTaskTypeLbl: Label 'Job Task Type';
-        NoLbl: Label 'No.';
-        QuantityLbl: Label 'Quantity';
-        TotalCostLbl: Label 'Total Cost';
-        TotalLbl: Label 'Total';
-        UnitCostLbl: Label 'Unit Cost';
+        ShiptoAddrLbl: Label 'Ship-to Address';
         CurrencyFormat: Text;
         JobFilter: Text;
         JobTaskFilter: Text;
         BillToAddr: array[8] of Text[100];
         CompanyAddr: array[8] of Text[100];
         ShipToAddr: array[8] of Text[100];
-        HeaderJobTask: Text[250];
-        HeaderJobTaskNo: Text[250];
-        TotalJob: Text[250];
-        ShowShippingAddr: Boolean;
-        ShiptoAddrLbl: Label 'Ship-to Address';
-        TotalJobTask: Text[250];
-        Resource: Record Resource;
 
     local procedure ConstructCurrencyFormatString()
     var
