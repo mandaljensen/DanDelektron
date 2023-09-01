@@ -42,6 +42,16 @@ pageextension 50008 "Job List Ext." extends "Job List"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Quote, netto field.';
             }
+            field("Cost price"; Rec."Cost price")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Cost price field.';
+            }
+            field("Billable price"; Rec."Billable price")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Billable price field.';
+            }
         }
     }
 }

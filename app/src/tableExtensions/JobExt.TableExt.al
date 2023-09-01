@@ -137,5 +137,17 @@ tableextension 50000 "Job Ext." extends Job
             Caption = 'Estimate (hours)';
             DataClassification = CustomerContent;
         }
+        field(50024; "Cost price"; Decimal)
+        {
+            Caption = 'Cost price';
+            FieldClass = FlowField;
+            CalcFormula = sum("Job Ledger Entry"."Total Cost" where("Job No." = field("No."), "Entry Type" = const("Job Journal Line Entry Type"::Usage), "Posting Date" = field("Posting Date Filter")));
+        }
+        field(50025; "Billable price"; Decimal)
+        {
+            Caption = 'Billable price';
+            FieldClass = FlowField;
+            CalcFormula = sum("Job Ledger Entry"."Line Amount" where("Job No." = field("No."), "Entry Type" = const("Job Journal Line Entry Type"::Usage), "Posting Date" = field("Posting Date Filter")));
+        }
     }
 }
