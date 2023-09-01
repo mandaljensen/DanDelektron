@@ -579,15 +579,6 @@ report 50005 "DD Sales Credit Memo"
                     else
                         LineDiscountPctText := StrSubstNo('%1%', -Round("Line Discount %", 0.1));
 
-                    /*                     JobNo := Line."Job No.";
-
-                                        if JobNo <> '' then
-                                            JobNoLbl := JobNoLbl2
-                                        else
-                                            JobNoLbl := ''; */
-
-
-
                     VATAmountLine.Init();
                     VATAmountLine."VAT Identifier" := "VAT Identifier";
                     VATAmountLine."VAT Calculation Type" := "VAT Calculation Type";
