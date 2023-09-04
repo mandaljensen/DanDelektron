@@ -109,8 +109,11 @@ report 50006 "DD Job Quote"
             column(BilltoCustumerNo; "Bill-to Customer No.") { }
             column(Person_Responsible; Resource.Name) { }
             column(Person_ResponsibleCaption; job.FieldCaption("Person Responsible")) { }
+            column(Description; Description) { }
             column(DD_Description_2; "DD Description 2") { }
             column(DD_Description_3; "DD Description 3") { }
+            column(Contact_Person; "Contact Person") { }
+            column(Contact_PersonCaption; job.FieldCaption("Contact Person")) { }
             column(Quote__netto; "Quote, netto") { }
             dataitem(Totals; "Integer")
             {
