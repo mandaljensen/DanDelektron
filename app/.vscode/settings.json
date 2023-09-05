@@ -10,7 +10,7 @@
     "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectType>.al",
     "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
     "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectType>Ext.al",
-    "CRS.OnSaveAlFileAction": "Rename",
+    "CRS.OnSaveAlFileAction": "DoNothing",
     "CRS.DisableDefaultAlSnippets": true,
     "CRS.AlSubFolderName": "src",
     "al.defaultLaunchConfigurationName": "Docker"

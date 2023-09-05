@@ -4,11 +4,11 @@
   "publisher": "Mandal Jensen",
   "brief": "",
   "description": "Dan Delektron Core contains Dan Delektrons core changes to Business Central.",
-  "version": "1.0.0.41",
+  "version": "1.0.0.47",
   "privacyStatement": "",
   "EULA": "",
   "help": "",
-  "url": "https://www.relateit.dk",
+  "url": "https://www.mandal-jensen.dk",
   "logo": "",
   "features": ["TranslationFile"],
   "dependencies": [
