@@ -62,9 +62,11 @@ codeunit 50000 "Dan Delektron Subscribers"
     local procedure OnAfterUpdateVendorItemNoFromItemReference(var Rec: Record "Purchase Line"; xRec: Record "Purchase Line");
     var
         Itemvend: Record "Item Vendor";
+        Item: Record Item;
     begin
         ItemVend.Init();
-
+        Item.Init();
+        Item.Get(Rec."No.");
         ItemVend.SetRange("Item No.", Rec."No.");
         ItemVend.SetRange("Vendor No.", Rec."Buy-from Vendor No.");
         ItemVend.SetRange("Variant Code", Rec."Variant Code");
@@ -75,7 +77,10 @@ codeunit 50000 "Dan Delektron Subscribers"
             else
                 Rec.Validate("Vendor Item No.", '')
         end else
-            Rec.Validate("Vendor Item No.", '')
+            if Item."Vendor No." = Rec."Buy-from Vendor No." then
+                Rec.Validate("Vendor Item No.", Item."Vendor Item No.")
+            else
+                Rec.Validate("Vendor Item No.", '')
     end;
 
 
