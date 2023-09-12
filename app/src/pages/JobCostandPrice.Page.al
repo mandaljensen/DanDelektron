@@ -112,6 +112,14 @@ page 50000 "Job Cost and Price"
                 {
                     ToolTip = 'Specifies the value of the Qty. per Unit of Measure field.';
                 }
+                field("Total Cost"; Rec."Total Cost")
+                {
+                    ToolTip = 'Specifies the value of the Total Cost field.';
+                }
+                field("Total Price"; Rec."Total Price")
+                {
+                    ToolTip = 'Specifies the value of the Total Price field.';
+                }
             }
         }
     }
@@ -127,6 +135,26 @@ page 50000 "Job Cost and Price"
                 ToolTip = 'Executes the Fix Prices action.';
                 Image = RefreshVATExemption;
                 RunObject = report "Fix Job Prices";
+            }
+            action(FillTotalFields)
+            {
+                Caption = 'Fill Total Fields';
+                ApplicationArea = All;
+                ToolTip = 'Executes the Fill Total Fields action.';
+                Image = InsertAccount;
+
+                trigger OnAction()
+                var
+                    JobCostandPrice: Record "Job Cost And Price";
+                begin
+                    JobCostandPrice.Reset();
+                    if JobCostandPrice.FindSet(true) then
+                        repeat
+                            JobCostandPrice.Validate("Total Cost", Round(JobCostandPrice.Quantity * JobCostandPrice."Unit Cost", 0.01, '='));
+                            JobCostandPrice.Validate("Total Price", Round((JobCostandPrice.Quantity * JobCostandPrice."Unit Price") - ((JobCostandPrice.Quantity * JobCostandPrice."Unit Price") * JobCostandPrice."Line Discount %" / 100), 0.01, '='));
+                            JobCostandPrice.Modify(true);
+                        until (JobCostandPrice.Next() <= 0);
+                end;
             }
         }
     }

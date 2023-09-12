@@ -15,16 +15,19 @@ report 50007 "Fix Job Prices"
             begin
                 JobPlanningLine.Reset();
                 JobPlanningLine.SetRange("Job No.", JobCostAndPrice."Job No.");
-                JobPlanningLine.SetRange("Job Task No.", JobCostAndPrice."Job Task No.");
+                //JobPlanningLine.SetRange("Job Task No.", JobCostAndPrice."Job Task No.");
                 JobPlanningLine.SetRange("Planning Date", JobCostAndPrice."Posting Date");
                 JobPlanningLine.SetRange("Document No.", JobCostAndPrice."Document No.");
                 JobPlanningLine.SetRange(Type, JobCostAndPrice.Type);
                 JobPlanningLine.SetRange("No.", JobCostAndPrice."No.");
+                if (JobCostAndPrice.Type = JobCostAndPrice.Type::"G/L Account") or (JobCostAndPrice.Type = JobCostAndPrice.Type::Resource) then
+                    JobPlanningLine.SetRange(Description, JobCostAndPrice.Description);
                 if JobPlanningLine.FindSet(true) then
                     repeat
-                        if (JobPlanningLine."Unit Cost" <> JobCostAndPrice."Unit Cost") or (JobPlanningLine."Unit Price" <> JobCostAndPrice."Unit Price") then begin
+                        if (JobPlanningLine."Unit Cost" <> JobCostAndPrice."Unit Cost") or (JobPlanningLine."Unit Price" <> JobCostAndPrice."Unit Price") or (JobPlanningLine."Line Discount %" <> JobCostAndPrice."Line Discount %") then begin
                             JobPlanningLine.Validate("Unit Cost", JobCostAndPrice."Unit Cost");
                             JobPlanningLine.Validate("Unit Price", JobCostAndPrice."Unit Price");
+                            JobPlanningLine.Validate("Line Discount %", JobCostAndPrice."Line Discount %");
                             if JobPlanningLine."Posted Line Amount" <> 0 then begin
                                 JobPlanningLine.Validate("Posted Line Amount", JobPlanningLine."Total Price");
                                 JobPlanningLine.Validate("Posted Line Amount (LCY)", JobPlanningLine."Total Price (LCY)");
@@ -69,6 +72,9 @@ report 50007 "Fix Job Prices"
                 JobLedgerEntry.Validate("Total Price (LCY)", JobPlanningLine."Line Amount (LCY)");
                 JobLedgerEntry.Validate("Line Amount", JobPlanningLine."Line Amount");
                 JobLedgerEntry.Validate("Line Amount (LCY)", JobPlanningLine."Line Amount (LCY)");
+                JobLedgerEntry.Validate("Line Discount %", JobPlanningLine."Line Discount %");
+                JobLedgerEntry.Validate("Line Discount Amount", JobPlanningLine."Line Discount Amount");
+                JobLedgerEntry.Validate("Line Discount Amount (LCY)", JobPlanningLine."Line Discount Amount (LCY)");
                 JobLedgerEntry.Modify(true);
             until (JobUsageLink.Next() <= 0);
     end;
@@ -97,4 +103,6 @@ report 50007 "Fix Job Prices"
 
     var
         JobPlanningLine: Record "Job Planning Line";
+        JobPlanningLine2: Record "Job Planning Line";
+        USeJobTaskNo: Code[20];
 }

@@ -149,5 +149,29 @@ tableextension 50000 "Job Ext." extends Job
             FieldClass = FlowField;
             CalcFormula = sum("Job Ledger Entry"."Line Amount" where("Job No." = field("No."), "Entry Type" = const("Job Journal Line Entry Type"::Usage), "Posting Date" = field("Posting Date Filter")));
         }
+        field(50026; "NAV Cost Amount"; Decimal)
+        {
+            Caption = 'NAV Cost Amount';
+            FieldClass = FlowField;
+            CalcFormula = sum("Job Cost And Price"."Total Cost" where("Job No." = field("No.")));
+        }
+        field(50027; "NAV Price Amount"; Decimal)
+        {
+            Caption = 'NAV Price Amount';
+            FieldClass = FlowField;
+            CalcFormula = sum("Job Cost And Price"."Total Price" where("Job No." = field("No.")));
+        }
+        field(50028; "BC Cost price"; Decimal)
+        {
+            Caption = 'BC Cost price';
+            FieldClass = FlowField;
+            CalcFormula = sum("Job Ledger Entry"."Total Cost" where("Job No." = field("No."), "Entry Type" = const("Job Journal Line Entry Type"::Usage), "Posting Date" = field("Posting Date Filter"), SystemCreatedBy = const('{283B0281-C933-496B-9223-E0FE352510E6}')));
+        }
+        field(50029; "BC Billable price"; Decimal)
+        {
+            Caption = 'BC Billable price';
+            FieldClass = FlowField;
+            CalcFormula = sum("Job Ledger Entry"."Line Amount" where("Job No." = field("No."), "Entry Type" = const("Job Journal Line Entry Type"::Usage), "Posting Date" = field("Posting Date Filter"), SystemCreatedBy = const('{283B0281-C933-496B-9223-E0FE352510E6}')));
+        }
     }
 }

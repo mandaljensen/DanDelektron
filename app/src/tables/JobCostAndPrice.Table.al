@@ -72,6 +72,7 @@ table 50000 "Job Cost And Price"
         field(17; "Unit Price"; Decimal)
         {
             Caption = 'Unit Price';
+            DecimalPlaces = 2 : 5;
         }
         field(18; "Line Type"; Enum "Job Line Type")
         {
@@ -92,6 +93,7 @@ table 50000 "Job Cost And Price"
         field(22; "Unit Cost"; Decimal)
         {
             Caption = 'Unit Cost';
+            DecimalPlaces = 2 : 5;
         }
         field(23; "Description 2"; Text[100])
         {
@@ -104,6 +106,14 @@ table 50000 "Job Cost And Price"
         field(25; "Entry No."; Integer)
         {
             Caption = 'Entry No.';
+        }
+        field(26; "Total Cost"; Decimal)
+        {
+            Caption = 'Total Cost';
+        }
+        field(27; "Total Price"; Decimal)
+        {
+            Caption = 'Total Price';
         }
     }
     keys
